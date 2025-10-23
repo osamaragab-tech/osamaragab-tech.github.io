@@ -37,7 +37,7 @@
 
   <main>
     <!-- About -->
-    <section class="about slide-up hidden">
+    <section class="about slide-up">
       <h2>About Me</h2>
       <p>
         I'm Osama Ragab, a passionate full-stack developer specializing in
@@ -48,7 +48,7 @@
     </section>
 
     <!-- Skills -->
-    <section class="skills slide-up hidden">
+    <section class="skills slide-up">
       <h2>Skills</h2>
       <ul>
         <li>🐍 Python / Django / REST Framework</li>
@@ -60,7 +60,7 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="projects slide-up hidden">
+    <section id="projects" class="projects slide-up">
       <h2>My Projects</h2>
 
       <div class="projects-grid">
@@ -87,7 +87,7 @@
     </section>
 
     <!-- Contact -->
-    <section class="contact slide-up hidden">
+    <section class="contact slide-up">
       <h2>Contact Me</h2>
       <p>I'm open to freelance or full-time opportunities. Let's connect!</p>
       <a href="mailto:osamaragab.tech@gmail.com" class="contact-btn">Send Email</a>
@@ -98,19 +98,7 @@
     © 2025 Osama Ragab — All Rights Reserved
   </footer>
   
-<script>
-  // Scroll animation
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-      }
-    });
-  });
 
-  const hiddenElements = document.querySelectorAll('.hidden');
-  hiddenElements.forEach((el) => observer.observe(el));
-</script>
 
 </body>
 </html>
