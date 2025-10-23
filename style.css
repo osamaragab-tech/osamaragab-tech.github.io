@@ -275,3 +275,15 @@ footer {
   transform: translateY(-4px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
+
+/* ===== Scroll Animation ===== */
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
