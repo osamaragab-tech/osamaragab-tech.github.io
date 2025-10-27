@@ -105,6 +105,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
+  align-items: stretch; /* يخلي كل الكروت بنفس الارتفاع */
 }
 
 .card {
@@ -113,6 +114,9 @@ h2 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column; /* يخلي الزر يقدر يثبت تحت */
+  justify-content: space-between;
 }
 
 .card:hover {
@@ -128,6 +132,9 @@ h2 {
 
 .card-content {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .card-content h3 {
@@ -149,6 +156,7 @@ h2 {
   padding: 8px 16px;
   border-radius: 6px;
   text-decoration: none;
+  margin-top: auto; /* يزق الزر لتحت داخل الكارت */
   font-weight: 500;
   transition: background-color 0.3s, transform 0.2s;
 }
