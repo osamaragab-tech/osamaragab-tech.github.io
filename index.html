@@ -13,7 +13,7 @@
     <meta property="og:title" content="Osama Omar | Full Stack Developer" />
     <meta
       property="og:description"
-      content="Portfolio showcasing Django & Flutter projects."
+      content="Portfolio showcasing Django projects and accounting/inventory systems."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://osamaragab-tech.github.io/" />
@@ -31,7 +31,7 @@
   <body>
     <header class="fade-in hero">
       <h1>Osama Omar</h1>
-      <p>Full-Stack Developer | Django & Flutter Enthusiast</p>
+      <p>Full-Stack Developer | Django & Accounting Systems Specialist</p>
 
       <div class="social-links">
         <a href="https://github.com/osamaragab-tech" target="_blank">GitHub</a>
@@ -39,6 +39,12 @@
           >LinkedIn</a
         >
         <a href="mailto:osamaragab.tech@gmail.com">Email</a>
+      </div>
+      <div class="dark-mode-toggle">
+        <label class="switch">
+          <input type="checkbox" id="darkModeSwitch">
+          <span class="slider round"></span>
+        </label>
       </div>
     </header>
 
@@ -48,9 +54,8 @@
         <h2>About Me</h2>
         <p>
           I’m Osama Omar, a passionate full-stack developer specializing in
-          <strong>Django</strong> and <strong>Flutter</strong>. I build modern,
-          efficient, and user-friendly web and mobile applications focused on
-          performance and simplicity.
+          <strong>Django</strong> with experience in building **accounting and inventory management systems**.
+    I develop modern, efficient, and user-friendly web applications focused on performance, data accuracy, and simplicity..
         </p>
       </section>
 
@@ -59,10 +64,10 @@
         <h2>Skills</h2>
         <ul>
           <li>🐍 Python / Django / REST Framework</li>
-          <li>📱 Flutter / Dart</li>
-          <li>🗃️ SQLite / PostgreSQL / MySQL</li>
+          <li>🗃️ SQLite / MySQL</li>
+          <li>💼 Accounting & Financial Management Systems</li>
           <li>🌐 HTML / CSS / JavaScript</li>
-          <li>☁️ Git / GitHub / Deployment (Render, Vercel, GitHub Pages)</li>
+          <li>☁️ Git / GitHub / Deployment (Render, GitHub Pages)</li>
         </ul>
       </section>
 
@@ -142,5 +147,27 @@
     </main>
 
     <footer>© 2025 Osama Omar — All Rights Reserved</footer>
+
+    <script>
+const toggle = document.getElementById('darkModeSwitch');
+const body = document.body;
+
+// تفعيل الوضع الليلي لو المستخدم سبق وفعل Dark Mode
+if (localStorage.getItem('darkMode') === 'enabled') {
+  body.classList.add('dark-mode');
+  toggle.checked = true;
+}
+
+// Toggle Dark Mode
+toggle.addEventListener('change', () => {
+  body.classList.toggle('dark-mode');
+  if(body.classList.contains('dark-mode')){
+    localStorage.setItem('darkMode','enabled');
+  } else {
+    localStorage.setItem('darkMode','disabled');
+  }
+});
+</script>
+
   </body>
 </html>

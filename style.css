@@ -290,3 +290,94 @@ footer {
 .card-content a {
   background: linear-gradient(90deg, #0a74da, #0077ff);
 }
+   
+
+/* Dark Mode Toggle Switch */
+/* Toggle Switch */
+.dark-mode-toggle {
+  display: inline-block;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #0a74da;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode header {
+  background-color: #111;
+}
+
+body.dark-mode footer {
+  background-color: #111;
+}
+
+body.dark-mode .card {
+  background-color: #2b2b2b;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .about, 
+body.dark-mode .skills, 
+body.dark-mode .contact {
+  background-color: #2b2b2b;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .card-content a,
+body.dark-mode .contact-btn {
+  background: linear-gradient(90deg, #0077ff, #0a74da);
+  color: #fff;
+}
+
+body.dark-mode h2, body.dark-mode h3 {
+  color: #4da6ff;
+}
+
+body.dark-mode p, body.dark-mode li {
+  color: #ddd;
+}
