@@ -285,3 +285,8 @@ footer {
   transform: translateY(-4px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
+
+
+.card-content a {
+  background: linear-gradient(90deg, #0a74da, #0077ff);
+}
