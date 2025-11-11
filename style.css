@@ -395,3 +395,10 @@ body.dark-mode p, body.dark-mode li {
 .dark-mode-toggle span {
   margin-right: 8px;
 }
+
+.project-links {
+  display: flex;
+  justify-content: space-between; /* يفرق الأزرار */
+  margin-top: auto; /* هذا يرفع الأزرار لأسفل الكارد مهما طول النص */
+  gap: 10px;
+}
